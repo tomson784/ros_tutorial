@@ -1,7 +1,5 @@
 # ros_serial
 
-
-
 ```
 rosrun rosserial_arduino make_libraries.py $(create path)
 ```
