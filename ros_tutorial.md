@@ -92,13 +92,13 @@ sudo apt-get purge ros-melodic-*
 
 ROSのパッケージを作成して，Publisher，Subscriberを実行する．
 
-| 対応項目 | 日本語URL | 英語URL |
+| 順番 | 日本語URL | 英語URL |
 |:-:|:-:|:-:|
-| ROSパッケージを作る | http://wiki.ros.org/ja/ROS/Tutorials/CreatingPackage | http://wiki.ros.org/ROS/Tutorials/CreatingPackage |
-| ROSのパッケージをビルドする | http://wiki.ros.org/ja/ROS/Tutorials/BuildingPackages | http://wiki.ros.org/ROS/Tutorials/BuildingPackages |
-| シンプルな配信者(Publisher)と購読者(Subscriber)を書く(C++) | http://wiki.ros.org/ja/ROS/Tutorials/WritingPublisherSubscriber%28c%2B%2B%29 | http://wiki.ros.org/ROS/Tutorials/WritingPublisherSubscriber%28c%2B%2B%29 |
-| シンプルな配信者(Publisher)と購読者(Subscriber)を書く(Python) | http://wiki.ros.org/ja/ROS/Tutorials/WritingPublisherSubscriber%28python%29 | http://wiki.ros.org/ROS/Tutorials/WritingPublisherSubscriber%28python%29 |
-|シンプルなPublisherとSubscriberを実行してみる | http://wiki.ros.org/ja/ROS/Tutorials/ExaminingPublisherSubscriber | http://wiki.ros.org/ROS/Tutorials/ExaminingPublisherSubscriber |
+|1| [ROSパッケージを作る](http://wiki.ros.org/ja/ROS/Tutorials/CreatingPackage) | [Creating a ROS Package](http://wiki.ros.org/ROS/Tutorials/CreatingPackage) |
+|2| [ROSのパッケージをビルドする](http://wiki.ros.org/ja/ROS/Tutorials/BuildingPackages) | [Building a ROS Package](http://wiki.ros.org/ROS/Tutorials/BuildingPackages) |
+|3| [シンプルな配信者(Publisher)と購読者(Subscriber)を書く(C++)](http://wiki.ros.org/ja/ROS/Tutorials/WritingPublisherSubscriber%28c%2B%2B%29) | [Writing a Simple Publisher and Subscriber (C++)](http://wiki.ros.org/ROS/Tutorials/WritingPublisherSubscriber%28c%2B%2B%29) |
+|4| [シンプルな配信者(Publisher)と購読者(Subscriber)を書く(Python)](http://wiki.ros.org/ja/ROS/Tutorials/WritingPublisherSubscriber%28python%29) | [Writing a Simple Publisher and Subscriber (Python)](http://wiki.ros.org/ROS/Tutorials/WritingPublisherSubscriber%28python%29) |
+|5| [シンプルなPublisherとSubscriberを実行してみる](http://wiki.ros.org/ja/ROS/Tutorials/ExaminingPublisherSubscriber) | [Examining the Simple Publisher and Subscriber](http://wiki.ros.org/ROS/Tutorials/ExaminingPublisherSubscriber) |
 
 ### 課題
 Terminal上に以下の文字列が表示されるか確認（スクショ？未定）
@@ -127,6 +127,10 @@ Terminal上に以下の文字列が表示されるか確認（スクショ？未
 ## ROSに流れてくるデータの保存
 
 [データを記録し，リプレイをする](http://wiki.ros.org/ja/ROS/Tutorials/Recording%20and%20playing%20back%20data)  
+
+### 課題
+
+turtlesimがrosbagで動いていることを確認
 
 ## その他
 Dockerを用いればROSを試す環境を簡単に構築することができます．  
