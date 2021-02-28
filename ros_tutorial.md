@@ -1,6 +1,6 @@
 # ROS入門
 
-課題を交えてROSの使い方をべんきょうしてもらいます．  
+課題を交えてROSの使い方を勉強してもらいます．  
 気になったワードは逐一ググることをお勧めします．
 
 ## できるようになってほしいこと
@@ -77,10 +77,56 @@ source ~/.bashrc
 
 <br>
 
-こまったとき(ROSが正常に作動しない，再インストールしたいときなど)は以下のコマンドでROS関連のパッケージを削除することができます．
+こまったとき(ROSが正常に作動しない，再インストールしたいときなど)  
+は以下のコマンドでROS関連のパッケージを削除することができます．
+
 ```
 sudo apt-get purge ros-melodic-*
 ```
+
+### 課題  
+`roscore`の正常な動作を確認する（スクショを提出する？）
+
+
+## ROSの基本的なデータの受け渡し
+
+ROSのパッケージを作成して，Publisher，Subscriberを実行する．
+
+| 対応項目 | 日本語URL | 英語URL |
+|:-:|:-:|:-:|
+| ROSパッケージを作る | http://wiki.ros.org/ja/ROS/Tutorials/CreatingPackage | http://wiki.ros.org/ROS/Tutorials/CreatingPackage |
+| ROSのパッケージをビルドする | http://wiki.ros.org/ja/ROS/Tutorials/BuildingPackages | http://wiki.ros.org/ROS/Tutorials/BuildingPackages |
+| シンプルな配信者(Publisher)と購読者(Subscriber)を書く(C++) | http://wiki.ros.org/ja/ROS/Tutorials/WritingPublisherSubscriber%28c%2B%2B%29 | http://wiki.ros.org/ROS/Tutorials/WritingPublisherSubscriber%28c%2B%2B%29 |
+| シンプルな配信者(Publisher)と購読者(Subscriber)を書く(Python) | http://wiki.ros.org/ja/ROS/Tutorials/WritingPublisherSubscriber%28python%29 | http://wiki.ros.org/ROS/Tutorials/WritingPublisherSubscriber%28python%29 |
+|シンプルなPublisherとSubscriberを実行してみる | http://wiki.ros.org/ja/ROS/Tutorials/ExaminingPublisherSubscriber | http://wiki.ros.org/ROS/Tutorials/ExaminingPublisherSubscriber |
+
+### 課題
+Terminal上に以下の文字列が表示されるか確認（スクショ？未定）
+```
+[ INFO] 1251943144.400553000: Received [Hello there! This is message [1]]
+[ INFO] 1251943144.600712000: Received [Hello there! This is message [2]]
+[ INFO] 1251943144.801003000: Received [Hello there! This is message [3]]
+        :
+        :
+        :
+```
+
+## ROSを使ったArduinoの制御
+
+[ROSを用いたArduinoの制御](http://wiki.ros.org/rosserial_arduino/Tutorials)  
+
+やってもらいたい項目
+1. [Arduino IDE Setup](http://wiki.ros.org/rosserial_arduino/Tutorials/Arduino%20IDE%20Setup)
+2. [Hello World (example publisher)](http://wiki.ros.org/rosserial_arduino/Tutorials/Hello%20World)
+3. [Blink (example subscriber)](http://wiki.ros.org/rosserial_arduino/Tutorials/Blink)
+
+### 課題
+
+`rqt_graph`などでノードが繋がっているか確認してもらう．
+
+## ROSに流れてくるデータの保存
+
+[データを記録し，リプレイをする](http://wiki.ros.org/ja/ROS/Tutorials/Recording%20and%20playing%20back%20data)  
 
 ## その他
 Dockerを用いればROSを試す環境を簡単に構築することができます．  
