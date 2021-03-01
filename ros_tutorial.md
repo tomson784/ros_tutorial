@@ -133,6 +133,14 @@ turtlesimがrosbagで動いていることを確認
 `rqt_graph`などでノードが繋がっているか確認してもらう．
 
 ## その他
+
+### 応用
+
+ROSの強みはインターネット上のフリーのパッケージを用いることで，手軽に高度なアルゴリズムを実装できる点にあります．  
+[Industrial Training](https://industrial-training-jp.readthedocs.io/ja/latest/index.html)のサイトに様々なパッケージの紹介と使い方についての説明があるので，基本的なことができるようなった人はやってみてください．
+
+
+### Docker
 Dockerを用いればROSを試す環境を簡単に構築することができます．  
 興味があれば以下のYoutubeを見てください．  
 [ロボットシステム学第12回（Docker）](https://www.youtube.com/watch?v=Utvf4YmMJpk&list=PLbUh9y6MXvjdIB5A9uhrZVrhAaXc61Pzz&index=16)
