@@ -3,12 +3,12 @@
 課題を交えてROSの使い方を勉強してもらいます．  
 気になったワードは逐一ググることをお勧めします．
 
-## できるようになってほしいこと
+## **できるようになってほしいこと**
 - ROSの基本的なデータの受け渡しについての概要を理解し，実装できること
 - ROSを使ったArduinoの制御
 - ROSに流れてくるデータの保存
 
-## やること
+## **やること**
 
 [ROS Wiki](http://wiki.ros.org/ROS/Tutorials) に準拠した内容で行います．  
 ROSはOSのバージョンに合わせてインストールする必要があるので気をつけてください．  
@@ -21,7 +21,7 @@ ROSはOSのバージョンに合わせてインストールする必要がある
 | ROS Version | Melodic |
 
 
-## PC上にROSを扱える仮想環境を構築
+## **PC上にROSを扱える仮想環境を構築**
 
 仮想環境については[このサイト](https://bcblog.sios.jp/what-is-virtualenvironment-vmware/)などを参照してください．
 
@@ -31,7 +31,7 @@ ROSはOSのバージョンに合わせてインストールする必要がある
 を参考にUbuntuの環境を作成してください．
 
 
-## ROSをインストール
+## **ROSをインストール**
 
 ROS Wiki は日本語ページも存在しますが，日本語版は古いものしか存在しないので，英語版を参照することをおすすめします．
 - [日本語版](http://wiki.ros.org/ja/ROS/Tutorials)
@@ -88,7 +88,7 @@ sudo apt-get purge ros-melodic-*
 `roscore`の正常な動作を確認する（スクショを提出する？）
 
 
-## ROSの基本的なデータの受け渡し
+## **ROSの基本的なデータの受け渡し**
 
 ROSのパッケージを作成して，Publisher，Subscriberを実行する．
 
@@ -111,7 +111,7 @@ Terminal上に以下の文字列が表示されるか確認（スクショ？未
         :
 ```
 
-## ROSに流れてくるデータの保存
+## **ROSに流れてくるデータの保存**
 
 [データを記録し，リプレイをする](http://wiki.ros.org/ja/ROS/Tutorials/Recording%20and%20playing%20back%20data)  
 
@@ -119,28 +119,32 @@ Terminal上に以下の文字列が表示されるか確認（スクショ？未
 
 turtlesimがrosbagで動いていることを確認
 
-## ROSを使ったArduinoの制御
+## **ROSを使ったArduinoの制御**
 
-[ROSを用いたArduinoの制御](http://wiki.ros.org/rosserial_arduino/Tutorials)  
+ROSを用いたArduino制御の[チュートリアルのリスト](http://wiki.ros.org/rosserial_arduino/Tutorials)  
 
 やってもらいたい項目
 1. [Arduino IDE Setup](http://wiki.ros.org/rosserial_arduino/Tutorials/Arduino%20IDE%20Setup)
 2. [Hello World (example publisher)](http://wiki.ros.org/rosserial_arduino/Tutorials/Hello%20World)
 3. [Blink (example subscriber)](http://wiki.ros.org/rosserial_arduino/Tutorials/Blink)
 
+仮想環境とホストPCでArduinoのシリアルポートを共有する方法については
+[ここ](http://kazuki-room.com/how_to_connect_to_the_vmware_serial_port/)
+を参照
+
 #### 課題 4
 
 `rqt_graph`などでノードが繋がっているか確認してもらう．
 
-## その他
+## **その他**
 
 ### 応用
 
 ROSの強みはインターネット上のフリーのパッケージを用いることで，手軽に高度なアルゴリズムを実装できる点にあります．  
 [Industrial Training](https://industrial-training-jp.readthedocs.io/ja/latest/index.html)のサイトに様々なパッケージの紹介と使い方についての説明があるので，基本的なことができるようなった人はやってみてください．
 
-
 ### Docker
 Dockerを用いればROSを試す環境を簡単に構築することができます．  
 興味があれば以下のYoutubeを見てください．  
-[ロボットシステム学第12回（Docker）](https://www.youtube.com/watch?v=Utvf4YmMJpk&list=PLbUh9y6MXvjdIB5A9uhrZVrhAaXc61Pzz&index=16)
+[ロボットシステム学第12回（Docker）](https://www.youtube.com/watch?v=Utvf4YmMJpk&list=PLbUh9y6MXvjdIB5A9uhrZVrhAaXc61Pzz&index=16)  
+サンプルを[ここ](https://github.com/tomson784/ros_tutorial)に用意しました．
