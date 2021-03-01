@@ -84,7 +84,7 @@ source ~/.bashrc
 sudo apt-get purge ros-melodic-*
 ```
 
-### 課題  
+#### 課題  1
 `roscore`の正常な動作を確認する（スクショを提出する？）
 
 
@@ -100,7 +100,7 @@ ROSのパッケージを作成して，Publisher，Subscriberを実行する．
 |4| [シンプルな配信者(Publisher)と購読者(Subscriber)を書く(Python)](http://wiki.ros.org/ja/ROS/Tutorials/WritingPublisherSubscriber%28python%29) | [Writing a Simple Publisher and Subscriber (Python)](http://wiki.ros.org/ROS/Tutorials/WritingPublisherSubscriber%28python%29) |
 |5| [シンプルなPublisherとSubscriberを実行してみる](http://wiki.ros.org/ja/ROS/Tutorials/ExaminingPublisherSubscriber) | [Examining the Simple Publisher and Subscriber](http://wiki.ros.org/ROS/Tutorials/ExaminingPublisherSubscriber) |
 
-### 課題
+#### 課題 2
 Terminal上に以下の文字列が表示されるか確認（スクショ？未定）
 ```
 [ INFO] 1251943144.400553000: Received [Hello there! This is message [1]]
@@ -111,6 +111,14 @@ Terminal上に以下の文字列が表示されるか確認（スクショ？未
         :
 ```
 
+## ROSに流れてくるデータの保存
+
+[データを記録し，リプレイをする](http://wiki.ros.org/ja/ROS/Tutorials/Recording%20and%20playing%20back%20data)  
+
+#### 課題 3
+
+turtlesimがrosbagで動いていることを確認
+
 ## ROSを使ったArduinoの制御
 
 [ROSを用いたArduinoの制御](http://wiki.ros.org/rosserial_arduino/Tutorials)  
@@ -120,17 +128,9 @@ Terminal上に以下の文字列が表示されるか確認（スクショ？未
 2. [Hello World (example publisher)](http://wiki.ros.org/rosserial_arduino/Tutorials/Hello%20World)
 3. [Blink (example subscriber)](http://wiki.ros.org/rosserial_arduino/Tutorials/Blink)
 
-### 課題
+#### 課題 4
 
 `rqt_graph`などでノードが繋がっているか確認してもらう．
-
-## ROSに流れてくるデータの保存
-
-[データを記録し，リプレイをする](http://wiki.ros.org/ja/ROS/Tutorials/Recording%20and%20playing%20back%20data)  
-
-### 課題
-
-turtlesimがrosbagで動いていることを確認
 
 ## その他
 Dockerを用いればROSを試す環境を簡単に構築することができます．  
