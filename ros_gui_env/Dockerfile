@@ -14,4 +14,9 @@ RUN mkdir -p ~/catkin_ws/src && \
     cd ~/catkin_ws && catkin build
 
 RUN echo "export TURTLEBOT3_MODEL=burger" >> ~/.bashrc && \
-    echo "source ~/catkin_ws/devel/setup.bash" >> ~/.bashrc
+    echo "source ~/catkin_ws/devel/setup.bash" >> ~/.bashrc && \
+    echo "alias cb='catkin build'" >> ~/.bashrc && \
+    echo "alias cb_test='catkin run_tests'"  >> ~/.bashrc && \
+    echo "alias rosenv='env | grep ROS'" >> ~/.bashrc
+
+WORKDIR /catkin_ws/src
