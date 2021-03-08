@@ -8,6 +8,12 @@ Githubのアカウントがあればだれでも使用できます．
 
 使い方はこちらのサイトを参照してください．https://seleck.cc/647
 
+### ROSの使い方参考サイト
+[ROS(Robot Operating System)を使う](http://forestofazumino.web.fc2.com/ros/ros_top.html)  
+[ロボットシステム学（2020/4s, 6s）](https://lab.ueda.tech/?page=robosys_2020)  
+[ロボットシステム学講義](https://www.youtube.com/playlist?list=PLbUh9y6MXvjdIB5A9uhrZVrhAaXc61Pzz)  
+[ROS講座](https://qiita.com/srs/items/5f44440afea0eb616b4a)  
+[demura.net AI・ロボットをつくるために](https://demura.net/)  
 ## **できるようになってほしいこと**
 - ROSの基本的なデータの受け渡しについての概要を理解し，実装できること
 - ROSを使ったArduinoの制御
@@ -35,6 +41,7 @@ ROSはOSのバージョンに合わせてインストールする必要がある
 [ROS講座54 VMWare上でROSを使う](https://qiita.com/srs/items/25efd45641c274bb8415)  
 を参考にUbuntuの環境を作成してください．  
 macの人は VMWare Fusion 12 Playerで試してみてください．
+VMwareでうまくいかない人はVirtualBoxを使用してください．
 
 ## **ROSをインストール**
 
