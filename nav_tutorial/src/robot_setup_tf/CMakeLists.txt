@@ -135,8 +135,10 @@ include_directories(
 ## The recommended prefix ensures that target names across packages don't collide
 add_executable(tf_broadcaster src/tf_broadcaster.cpp)
 add_executable(tf_listener src/tf_listener.cpp)
+add_executable(laser_demo src/laser_demo.cpp)
 target_link_libraries(tf_broadcaster ${catkin_LIBRARIES})
 target_link_libraries(tf_listener ${catkin_LIBRARIES})
+target_link_libraries(laser_demo ${catkin_LIBRARIES})
 
 ## Rename C++ executable without prefix
 ## The above recommended prefix causes long target names, the following renames the

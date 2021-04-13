@@ -1,11 +1,16 @@
 # ROSのナビゲーションチュートリアル
 
-roswikiの[navigation](http://wiki.ros.org/navigation)に準拠した内容を行う．  
+roswikiの[navigation/Tutorials](http://wiki.ros.org/navigation/Tutorials)に準拠した内容を行う．  
 現在はtfよりtf2が推奨されているが，ここではtfで行う．
 
 1. Configuring and Using the Navigation Stack
-    1. Setting up your robot using tf (robot_setup_tf)
-
+    1. Setting up your robot using tf (`robot_setup_tf`)
+    2. Basic Navigation Tuning Guide
+    3. Setup and Configuration of the Navigation Stack on a Robot
+        1. Robot Setup
+            - [1.1] ROS
+            - [1.2] Transform Configuration (other transforms) (`robot_setup_tf`)
+            - [1.3] Sensor Information (sensor sources) (`robot_setup_tf`)
 
 ## memo
 
