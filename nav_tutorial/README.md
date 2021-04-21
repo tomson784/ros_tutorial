@@ -6,13 +6,18 @@ roswikiの[navigation/Tutorials](http://wiki.ros.org/navigation/Tutorials)に準
 1. Configuring and Using the Navigation Stack
     1. Setting up your robot using tf (`robot_setup_tf`)
     2. Basic Navigation Tuning Guide
-    3. Setup and Configuration of the Navigation Stack on a Robot
+    3. Setup and Configuration of the Navigation Stack on a Robot ([navigationTutorialsRobotSetup](http://wiki.ros.org/navigation/Tutorials/RobotSetup))
         1. Robot Setup
             - [1.1] ROS
             - [1.2] Transform Configuration (other transforms) (`robot_setup_tf`)
             - [1.3] Sensor Information (sensor sources) (`laser_scan_publisher`，`point_cloud_publisher`)
                 - [navigationTutorialsRobotSetupSensors](http://wiki.ros.org/navigation/Tutorials/RobotSetup/Sensors)
             - [1.4] Odometry Information (odometry source) (`odometry_publisher`)
+                - [navigationTutorialsRobotSetupOdom](http://wiki.ros.org/navigation/Tutorials/RobotSetup/Odom)
+            - [1.5] Base Controller (base controller)
+            - [1.6] Mapping (map_server)
+        2. Navigation Stack Setup
+
 
 ## memo
 
