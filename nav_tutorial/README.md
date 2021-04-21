@@ -10,7 +10,8 @@ roswikiの[navigation/Tutorials](http://wiki.ros.org/navigation/Tutorials)に準
         1. Robot Setup
             - [1.1] ROS
             - [1.2] Transform Configuration (other transforms) (`robot_setup_tf`)
-            - [1.3] Sensor Information (sensor sources) (`robot_setup_tf`)
+            - [1.3] Sensor Information (sensor sources) (`laser_scan_publisher`，`point_cloud_publisher`)
+                - [navigationTutorialsRobotSetupSensors](http://wiki.ros.org/navigation/Tutorials/RobotSetup/Sensors)
 
 ## memo
 
@@ -19,3 +20,8 @@ roswikiの[navigation/Tutorials](http://wiki.ros.org/navigation/Tutorials)に準
 > 二つ目は登録された座標系を使用して座標変換などを行えるListenterです．  
 
 https://myenigma.hatenablog.com/entry/20130210/1360491625 より引用
+
+
+## 参考
+
+https://github.com/ros-planning/navigation_tutorials  
