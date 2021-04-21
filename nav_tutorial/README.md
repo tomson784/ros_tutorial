@@ -12,6 +12,7 @@ roswikiの[navigation/Tutorials](http://wiki.ros.org/navigation/Tutorials)に準
             - [1.2] Transform Configuration (other transforms) (`robot_setup_tf`)
             - [1.3] Sensor Information (sensor sources) (`laser_scan_publisher`，`point_cloud_publisher`)
                 - [navigationTutorialsRobotSetupSensors](http://wiki.ros.org/navigation/Tutorials/RobotSetup/Sensors)
+            - [1.4] Odometry Information (odometry source) (`odometry_publisher`)
 
 ## memo
 
