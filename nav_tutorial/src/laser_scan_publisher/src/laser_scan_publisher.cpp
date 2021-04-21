@@ -10,12 +10,14 @@ int main(int argc, char** argv){
     unsigned int num_readings = 100;
     double laser_frequency = 40;
     double ranges[num_readings];
+    // 強度，受光強度
     double intensities[num_readings];
 
     int count = 0;
     ros::Rate r(1.0);
     while(n.ok()){
-        //generate some fake data for our laser scan
+        // generate some fake data for our laser scan
+        // レーザースキャンのダミーデータ生成
         for(unsigned int i = 0; i < num_readings; ++i){
             ranges[i] = count;
             intensities[i] = 100 + count;
@@ -36,8 +38,8 @@ int main(int argc, char** argv){
         scan.ranges.resize(num_readings);
         scan.intensities.resize(num_readings);
         for(unsigned int i = 0; i < num_readings; ++i){
-        scan.ranges[i] = ranges[i];
-        scan.intensities[i] = intensities[i];
+            scan.ranges[i] = ranges[i];
+            scan.intensities[i] = intensities[i];
         }
 
         scan_pub.publish(scan);
