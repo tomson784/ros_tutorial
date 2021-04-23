@@ -8,6 +8,6 @@
         "ms-vscode.cpptools",
         "ms-iot.vscode-ros"
     ],
-    "remoteUser": "vscode",
+    "remoteUser": "ubuntu",
     "shutdownAction": "stopCompose"
 }
