@@ -1,0 +1,12 @@
+version: '3'
+
+services:
+  ros_lecture_gui:
+    # image: tiryoh/ros-desktop-vnc:melodic
+    build: .
+    tty: true
+    ports:
+      - 6080:80
+    shm_size: 512m
+    # volumes: 
+    #   - ./src:/home/ubuntu/catkin_ws/src
