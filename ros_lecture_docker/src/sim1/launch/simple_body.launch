@@ -1,0 +1,10 @@
+<launch>
+  <arg name="model" default="$(find sim1)/urdf/simple_body.urdf"/>   
+  <param name="robot_description" command="$(find xacro)/xacro $(arg model)"/>
+
+  <include file="$(find gazebo_ros)/launch/empty_world.launch" />
+
+  <!-- urdfモデルをgazebo上に構築 -->
+  <node name="urdf_spawner" pkg="gazebo_ros" type="spawn_model" respawn="false" output="screen"
+    args="-urdf -model my_robo -param robot_description"/>
+</launch>

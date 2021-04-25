@@ -2,7 +2,7 @@
     "name": "ros_lecture",
     "dockerComposeFile": "docker-compose.yml",
     "service": "ros_lecture_gui",
-    "workspaceFolder": "/home/ubuntu/catkin_ws",
+    "workspaceFolder": "/home/ubuntu/catkin_ws/src",
     "extensions": [
         "ms-python.python",
         "ms-vscode.cpptools",
