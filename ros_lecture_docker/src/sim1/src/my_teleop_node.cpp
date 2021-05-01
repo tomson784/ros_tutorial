@@ -21,7 +21,7 @@ int main(int argc, char **argv)
     geometry_msgs::Twist vel;
     // geometry_msgs::Twist　この型は並進速度と回転速度(vector3:3次元ベクトル) を合わせたもので、速度指令によく使われる
 
-    pub= nh.advertise<geometry_msgs::Twist>("/create1/cmd_vel", 10);
+    pub= nh.advertise<geometry_msgs::Twist>("/dtw_robot/diff_drive_controller/cmd_vel", 10);
     // マスターにgeometry_msgs::Twist型のデータを送ることを伝える
     // マスターは/create1/cmd_velトピック(1番目の引数）を購読する
     // 全てのノードにトピックができたことを知らせる(advertise)。
@@ -43,10 +43,10 @@ int main(int argc, char **argv)
             vel.linear.x  = -0.5;
             break;
         case 'l':
-            vel.angular.z =  1.0;
+            vel.angular.z =  0.5;
             break;
         case 'r':
-            vel.angular.z = -1.0;
+            vel.angular.z = -0.5;
             break;
             // linear.xは前後方向の並進速度(m/s)。前方向が正。
             // angular.zは回転速度(rad/s)。反時計回りが正。
