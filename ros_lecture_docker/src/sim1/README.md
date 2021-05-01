@@ -10,18 +10,22 @@
     - geometry: 
 - gazebo: 
     - material: 色
-    - 
+    - mu1,mu2: 摩擦係数（mu1,mu2は基本的に同じもの）
     - 
 - joint
     - dynamics 
         - damping: 軸のダンピングの係数(減衰係数)
 - transmission
-    - 
+    - joint
+        - hardwareInterface
 
 # launch(gazebo)
 - rosparam: ros_control用のパラメータ
     - pid: PIDゲイン
 
+# キーボードで操作
+
+- [ROS演習４-2020:トピック通信しよう！](https://demura.net/education/lecture/19641.html)
 
 ## 参考
 - [ROS講座26 シミュレーターを作る](https://qiita.com/srs/items/f1a7c8abe577eaf3d0b9)
