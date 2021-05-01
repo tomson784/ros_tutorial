@@ -6,9 +6,9 @@ RUN sudo apt update -y && \
     mkdir -p ~/catkin_ws/src && \
     source /opt/ros/melodic/setup.bash && \
     cd ~/catkin_ws && catkin build && \
-    sudo apt install ros-melodic-ros-control ros-melodic-ros-controllers && \
-    sudo apt install ros-melodic-joint-state-publisher ros-melodic-joint-state-controller && \
-    sudo apt install ros-melodic-joint-state-publisher-gui
+    sudo apt install ros-melodic-ros-control ros-melodic-ros-controllers -y && \
+    sudo apt install ros-melodic-joint-state-publisher ros-melodic-joint-state-controller -y && \
+    sudo apt install ros-melodic-joint-state-publisher-gui -y
 
 RUN echo "export TURTLEBOT3_MODEL=burger" >> ~/.bashrc && \
     echo "source ~/catkin_ws/devel/setup.bash" >> ~/.bashrc && \

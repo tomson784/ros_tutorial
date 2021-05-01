@@ -134,7 +134,7 @@ include_directories(
 ## Declare a C++ executable
 ## With catkin_make all packages are built within a single CMake context
 ## The recommended prefix ensures that target names across packages don't collide
-add_executable(my_telelop_node src/my_telelop_node.cpp)
+add_executable(my_teleop_node src/my_teleop_node.cpp)
 add_executable(my_subscriber_node src/my_subscriber_node.cpp)
 
 ## Rename C++ executable without prefix
@@ -148,7 +148,7 @@ add_executable(my_subscriber_node src/my_subscriber_node.cpp)
 # add_dependencies(${PROJECT_NAME}_node ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
 
 ## Specify libraries to link a library or executable target against
-target_link_libraries(my_telelop_node
+target_link_libraries(my_teleop_node
   ${catkin_LIBRARIES}
 )
 target_link_libraries(my_subscriber_node

@@ -32,7 +32,7 @@ int main(int argc, char **argv)
     while (ros::ok()) { // このノードが使える間は無限ループする
         char key;  // 入力キーの値
 
-        cin >> key;　// 標準入力からキーを読み込む
+        cin >> key; // 標準入力からキーを読み込む
         cout << key << endl; // 読み込んだキーの値を標準出力へ出力
 
         switch (key) {
