@@ -136,6 +136,7 @@ include_directories(
 ## The recommended prefix ensures that target names across packages don't collide
 add_executable(my_teleop_node src/my_teleop_node.cpp)
 add_executable(my_subscriber_node src/my_subscriber_node.cpp)
+add_executable(sim1_odom_tf_converter src/sim1_odom_tf_converter.cpp)
 
 ## Rename C++ executable without prefix
 ## The above recommended prefix causes long target names, the following renames the
@@ -152,6 +153,9 @@ target_link_libraries(my_teleop_node
   ${catkin_LIBRARIES}
 )
 target_link_libraries(my_subscriber_node
+  ${catkin_LIBRARIES}
+)
+target_link_libraries(sim1_odom_tf_converter
   ${catkin_LIBRARIES}
 )
 
