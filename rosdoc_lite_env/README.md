@@ -7,11 +7,11 @@ DoxygenはMarkDown形式で記述でき，数式もMathJaxの形式で出力す�
 
 ファイルを共有した状態でコンテナを開く
 ```
-docker run -it --rm -v "$(pwd)/test:/home/test" rosdoc_test 
+docker run -it --rm -v "$(pwd)/<ros_project_dir_name>:/<ros_project_dir_name>" <rosdoc_lite_image> 
 ```
 
 コンテナの起動と同時にコマンドの実行
 ```
-docker run --rm -v "$(pwd)/test:/home/test" rosdoc_test rosdoc_lite /home/test
+docker run --rm -v "$(pwd)/<ros_project_dir_name>:/<ros_project_dir_name>" <rosdoc_lite_image> rosdoc_lite /<ros_project_dir_name>
 ```
 
