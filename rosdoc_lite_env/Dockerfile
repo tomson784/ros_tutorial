@@ -1,4 +1,4 @@
-FROM ros:melodic
+FROM ros:melodic-ros-core
 
 RUN apt-get update -y
 RUN apt-get install ros-melodic-rosdoc-lite -y
