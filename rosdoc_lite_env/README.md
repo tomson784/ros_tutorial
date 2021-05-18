@@ -13,7 +13,7 @@ docker run -it --rm -v "$(pwd)/<ros_project_path_on_host>:/<ros_project_path_on_
 
 コンテナの起動と同時にコマンドの実行
 ```
-docker run --rm -v "$(pwd)/<ros_project_path_on_host>:/<ros_project_path_on_docker>" <rosdoc_lite_image> rosdoc_lite .
+docker run --rm -v "$(pwd)/<ros_project_path_on_host>:/<ros_project_path_on_docker>" --workdir="/<ros_project_path_on_docker>" tomson784/rosdoc-lite rosdoc_lite .
 ```
 
 
