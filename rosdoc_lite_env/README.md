@@ -5,13 +5,20 @@ DoxygenはMarkDown形式で記述でき，数式もMathJaxの形式で出力す�
 しかし，数式を出力するためにはtex関連のツールが揃っている必要がある．  
 ここでは，`rosdoc_lite`とtex関連のツールがインストールされた docker image を用いて，簡単にドキュメント自動生成ができるようにする．
 
-ファイルを共有した状態でコンテナを開く
+ファイルを共有した状態でコンテナを開く．
 ```
-docker run -it --rm -v "$(pwd)/<ros_project_dir_name>:/<ros_project_dir_name>" <rosdoc_lite_image> 
+cd <ros_project_path_on_host>
+docker run -it --rm -v "$(pwd)/<ros_project_path_on_host>:/<ros_project_path_on_docker>" --workdir="/<ros_project_path_on_docker>" <rosdoc_lite_image> 
 ```
 
 コンテナの起動と同時にコマンドの実行
 ```
-docker run --rm -v "$(pwd)/<ros_project_dir_name>:/<ros_project_dir_name>" <rosdoc_lite_image> rosdoc_lite /<ros_project_dir_name>
+docker run --rm -v "$(pwd)/<ros_project_path_on_host>:/<ros_project_path_on_docker>" <rosdoc_lite_image> rosdoc_lite .
+```
+
+
+以下のコマンドで`Dockerfile`をimageにしたものをダウンロードできる
+```
+docker pull tomson784/rosdoc-lite:latest
 ```
 
