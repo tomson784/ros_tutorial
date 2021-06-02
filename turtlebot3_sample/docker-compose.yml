@@ -1,0 +1,12 @@
+version: '3'
+
+services:
+  ros_gazebo:
+    # image: tiryoh/ros-desktop-vnc:melodic
+    build: .
+    tty: true
+    ports:
+      - 6080:80
+    shm_size: 512m
+    volumes: 
+      - ./gazebo_rl:/home/ubuntu/catkin_ws/src/gazebo_rl
