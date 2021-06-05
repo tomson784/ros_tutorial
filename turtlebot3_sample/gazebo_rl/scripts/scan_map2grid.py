@@ -7,9 +7,10 @@ angle_min = np.loadtxt("../data/angle_min.txt")
 angle_max = np.loadtxt("../data/angle_max.txt")
 angle_increment = np.loadtxt("../data/angle_increment.txt")
 angle = angle_min + math.pi/2
+range_max = np.loadtxt("../data/range_max.txt")
 
-grid_num = 80
-resolution = 0.1
+grid_num = 40
+resolution = 2*range_max / grid_num
 
 # 範囲の下限値が決まっている場合
 def real2grid_index(x, y, x_min, y_min, resolution):
