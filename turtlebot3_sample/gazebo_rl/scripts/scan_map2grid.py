@@ -1,3 +1,7 @@
+# -*- coding: utf-8 -*-
+
+# /scan topic から取得したデータを画像情報に変換する
+
 import numpy as np
 import math
 import matplotlib.pyplot as plt
