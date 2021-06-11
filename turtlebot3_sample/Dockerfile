@@ -10,7 +10,7 @@ RUN mkdir -p ~/catkin_ws/src && \
     git clone https://github.com/ROBOTIS-GIT/turtlebot3_msgs.git && \
     git clone https://github.com/ROBOTIS-GIT/turtlebot3_simulations.git && \
     git clone https://github.com/ROBOTIS-GIT/turtlebot3_gazebo_plugin.git && \
-    git clone https://github.com/tomson784/turtlebot3_machine_learning.git && \
+    git clone -b melodic-devel https://github.com/tomson784/turtlebot3_machine_learning.git && \
     cd ~/catkin_ws && catkin_make 
 
 RUN echo "export TURTLEBOT3_MODEL=burger" >> ~/.bashrc && \
