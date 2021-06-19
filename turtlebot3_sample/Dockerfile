@@ -17,6 +17,9 @@ RUN echo "export TURTLEBOT3_MODEL=burger" >> ~/.bashrc && \
     echo "source ~/catkin_ws/devel/setup.bash" >> ~/.bashrc && \
     echo "alias cm='cd ~/catkin_ws && catkin_make'" >> ~/.bashrc && \
     echo "alias cm_test='cd ~/catkin_ws && catkin_make run_tests'"  >> ~/.bashrc && \
-    echo "alias rosenv='env | grep ROS'" >> ~/.bashrc
-    # sudo apt-get install tmux -y && \
-    # git clone https://github.com/tomson784/dotfiles.git
+    echo "alias rosenv='env | grep ROS'" >> ~/.bashrc && \
+    sudo apt-get update -y && \
+    sudo apt-get install tmux -y && \
+    sudo apt-get install python-pip -y && \
+    pip install tensorflow==1.13.1 && \
+    git clone https://github.com/tomson784/dotfiles.git
